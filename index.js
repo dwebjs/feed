@@ -2,7 +2,7 @@ var fs = require('fs')
 var prettyBytes = require('prettier-bytes')
 var neatLog = require('neat-log')
 var output = require('neat-log/output')
-var DWeb = require(`@dwebjs/core`)
+var DWeb = require('@dwebjs/core')
 var ram = require('random-access-memory')
 
 module.exports = function(opts) {
@@ -109,15 +109,15 @@ module.exports = function(opts) {
 
     function view(state) {
         if (!state.running) {
-            if (state.opts.key) return 'Connecting to dWeb network...'
-            return 'Pulling dDrive history...'
+            if (state.opts.key) return 'Connecting to the dWeb...'
+            return 'Reading dweb history...'
         }
         return output(`
       ${state.log.join('\n')}
       ${state.offline
     ? state.exiting
-      ? '\nNo sources found in dWeb network.\nLog may be outdated.'
-      : '...\n\nConnecting to dWeb network to update & verify log...'
+      ? '\nNo sources found on dWeb.\nLog may be outdated.'
+      : '...\n\nConnecting to the dWeb to update & verify log...'
     : '\nLog synced with network'}
 
     Vault has ${state.dweb.vault.version} changes (puts: +${state.puts}, dels: -${state.dels})
