@@ -10,7 +10,7 @@
         "url": "https://github.com/dwebjs/feed/issues"
     },
     "dependencies": {
-        "@dwebjs/core": "@dwebjs/core#master",
+        "@dwebjs/core": "dwebjs/core#master",
         "minimist": "^1.2.0",
         "neat-log": "^2.4.0",
         "prettier-bytes": "^1.0.4",
