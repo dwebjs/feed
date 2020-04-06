@@ -11,7 +11,7 @@
     },
     "dependencies": {
         "@dwebjs/core": "dwebjs/core#master",
-        "minimist": "^1.2.0",
+        "minimist": "^1.2.3",
         "neat-log": "^2.4.0",
         "prettier-bytes": "^1.0.4",
         "random-access-memory": "^3.0.0"
